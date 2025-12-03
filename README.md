@@ -1,4 +1,4 @@
-# -GDV-IB-Garc-a_Bl-zquez_Daniel---Entrega-4-Videojuego-Monta-un-PC-
+# [GDV][IB] García_Blázquez_Daniel - Entrega 4 (Videojuego: "Monta-un-PC")
 
 # Monta un PC – Videojuego Educativo
 ## Descripción

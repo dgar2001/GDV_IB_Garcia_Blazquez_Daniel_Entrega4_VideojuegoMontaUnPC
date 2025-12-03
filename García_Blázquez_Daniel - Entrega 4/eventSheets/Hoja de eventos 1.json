@@ -1,5 +1,337 @@
 {
 	"name": "Hoja de eventos 1",
-	"events": [],
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "aciertos",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 513755877335968
+		},
+		{
+			"eventType": "variable",
+			"name": "cpuColocada",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 739951026416591
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-dragging",
+					"objectClass": "Placa_base",
+					"sid": 212042223782537,
+					"behaviorType": "ArrastrarYSoltar"
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Placa_base",
+					"sid": 812468182393082,
+					"parameters": {
+						"object": "ZonaPlacaBase"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Placa_base",
+					"sid": 662303493536755,
+					"parameters": {
+						"x": "ZonaPlacaBase.X",
+						"y": "ZonaPlacaBase.Y"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Placa_base",
+					"sid": 131656486891798,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 714866827707828,
+					"parameters": {
+						"variable": "aciertos",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 621966133839600
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-dragging",
+					"objectClass": "cpu",
+					"sid": 421355534623319,
+					"behaviorType": "ArrastrarYSoltar"
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "cpu",
+					"sid": 379688687745604,
+					"parameters": {
+						"object": "ZonaCPU"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "cpu",
+					"sid": 621242029911425,
+					"parameters": {
+						"x": "ZonaCPU.X",
+						"y": "ZonaCPU.Y"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "cpu",
+					"sid": 203856236508248,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 102504746647887,
+					"parameters": {
+						"variable": "cpuColocada",
+						"value": "true"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 182906870992108,
+					"parameters": {
+						"variable": "aciertos",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 923717564940083
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-dragging",
+					"objectClass": "cpu_cooler",
+					"sid": 560631039703089,
+					"behaviorType": "ArrastrarYSoltar"
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "cpu_cooler",
+					"sid": 580691066418522,
+					"parameters": {
+						"object": "cpu"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 596073894291160,
+					"parameters": {
+						"variable": "cpuColocada"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "cpu_cooler",
+					"sid": 498541875988029,
+					"parameters": {
+						"x": "cpu.X",
+						"y": "cpu.Y"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "cpu_cooler",
+					"sid": 410216821588461,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 642676164455332,
+					"parameters": {
+						"variable": "aciertos",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 814338668929190
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-dragging",
+					"objectClass": "Grafica",
+					"sid": 987071996080392,
+					"behaviorType": "ArrastrarYSoltar"
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "Grafica",
+					"sid": 311260232971608,
+					"parameters": {
+						"object": "ZonaGráfica"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Grafica",
+					"sid": 236695835290415,
+					"parameters": {
+						"x": "ZonaGráfica.X",
+						"y": "ZonaGráfica.Y"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "Grafica",
+					"sid": 566084737449961,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 540275670625027,
+					"parameters": {
+						"variable": "aciertos",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 791745284068449
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-dragging",
+					"objectClass": "psu",
+					"sid": 390305678382968,
+					"behaviorType": "ArrastrarYSoltar"
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "psu",
+					"sid": 541490892574188,
+					"parameters": {
+						"object": "ZonaFuente"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "psu",
+					"sid": 426583267316739,
+					"parameters": {
+						"x": "ZonaFuente.X",
+						"y": "ZonaFuente.Y"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "psu",
+					"sid": 994819653522887,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 560919678813789,
+					"parameters": {
+						"variable": "aciertos",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 843265479379265
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-dragging",
+					"objectClass": "ram",
+					"sid": 270990540102781,
+					"behaviorType": "ArrastrarYSoltar"
+				},
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "ram",
+					"sid": 251040844989931,
+					"parameters": {
+						"object": "ZonaRAM"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "ram",
+					"sid": 908039102733224,
+					"parameters": {
+						"x": "ZonaRAM.X",
+						"y": "ZonaRAM.Y"
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "ram",
+					"sid": 976846722796297,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "disabled"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 500023361284103,
+					"parameters": {
+						"variable": "aciertos",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 781558935531622
+		}
+	],
 	"sid": 139087313936096
 }

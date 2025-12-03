@@ -1,0 +1,63 @@
+{
+	"name": "Grafica",
+	"plugin-id": "Sprite",
+	"sid": 467883941934519,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "DragnDrop",
+			"name": "ArrastrarYSoltar",
+			"sid": 120148833650512
+		},
+		{
+			"behaviorId": "bound",
+			"name": "RestringidoALaEscena",
+			"sid": 776241563125473
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 765,
+						"height": 212,
+						"originX": 0.503921568627451,
+						"originY": 0.45047169811320753,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 5542134,
+						"collisionPoly": {
+							"points": [
+								0.00130718954248366,
+								0,
+								1,
+								0,
+								1,
+								1,
+								0.00130718954248366,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 791849602756743,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

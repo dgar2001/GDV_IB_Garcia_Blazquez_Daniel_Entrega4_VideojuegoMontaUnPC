@@ -1,0 +1,51 @@
+{
+	"name": "Placa_base",
+	"plugin-id": "Sprite",
+	"sid": 667497504496963,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "DragnDrop",
+			"name": "ArrastrarYSoltar",
+			"sid": 662303478299350
+		},
+		{
+			"behaviorId": "bound",
+			"name": "RestringidoALaEscena",
+			"sid": 330861301607383
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 601,
+						"height": 756,
+						"originX": 0.5166389351081531,
+						"originY": 0.5013227513227513,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 4751119,
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 652839797961031,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

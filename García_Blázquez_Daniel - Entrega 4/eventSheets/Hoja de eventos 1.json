@@ -66,6 +66,14 @@
 						"variable": "aciertos",
 						"value": "1"
 					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TextoAciertos",
+					"sid": 722051850603849,
+					"parameters": {
+						"text": "\"Aciertos: \" & aciertos & \"/6\""
+					}
 				}
 			],
 			"sid": 621966133839600
@@ -124,6 +132,14 @@
 						"variable": "aciertos",
 						"value": "1"
 					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TextoAciertos",
+					"sid": 700410112789793,
+					"parameters": {
+						"text": "\"Aciertos: \" & aciertos & \"/6\""
+					}
 				}
 			],
 			"sid": 923717564940083
@@ -181,6 +197,14 @@
 						"variable": "aciertos",
 						"value": "1"
 					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TextoAciertos",
+					"sid": 927788215083116,
+					"parameters": {
+						"text": "\"Aciertos: \" & aciertos & \"/6\""
+					}
 				}
 			],
 			"sid": 814338668929190
@@ -229,6 +253,14 @@
 					"parameters": {
 						"variable": "aciertos",
 						"value": "1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TextoAciertos",
+					"sid": 953460262690707,
+					"parameters": {
+						"text": "\"Aciertos: \" & aciertos & \"/6\""
 					}
 				}
 			],
@@ -279,6 +311,14 @@
 						"variable": "aciertos",
 						"value": "1"
 					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TextoAciertos",
+					"sid": 552290874372170,
+					"parameters": {
+						"text": "\"Aciertos: \" & aciertos & \"/6\""
+					}
 				}
 			],
 			"sid": 843265479379265
@@ -328,9 +368,51 @@
 						"variable": "aciertos",
 						"value": "1"
 					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TextoAciertos",
+					"sid": 689292362433479,
+					"parameters": {
+						"text": "\"Aciertos: \" & aciertos & \"/6\""
+					}
 				}
 			],
 			"sid": 781558935531622
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 899283061776561,
+					"parameters": {
+						"variable": "aciertos",
+						"comparison": 0,
+						"value": "6"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "FondoFin",
+					"sid": 725198858097254,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TextoFin",
+					"sid": 734556518946783,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 574852208632911
 		}
 	],
 	"sid": 139087313936096

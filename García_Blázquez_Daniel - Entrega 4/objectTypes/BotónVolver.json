@@ -1,0 +1,9 @@
+{
+	"name": "BotónVolver",
+	"plugin-id": "Button",
+	"sid": 615476839838119,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": []
+}

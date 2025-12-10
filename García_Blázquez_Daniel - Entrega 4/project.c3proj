@@ -8,6 +8,13 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
+			"id": "Button",
+			"name": "Botón",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Mouse",
 			"name": "Mouse",
 			"author": "Scirra",
@@ -22,22 +29,29 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Text",
+			"name": "Texto",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "TiledBg",
-			"name": "Tiled Background",
+			"name": "Fondo en mosaico",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "DragnDrop",
-			"name": "Drag & Drop",
+			"name": "Arrastrar y soltar",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "bound",
-			"name": "Bound to layout",
+			"name": "Restringido a la escena",
 			"author": "Scirra",
 			"bundled": false
 		}
@@ -58,7 +72,14 @@
 			"ZonaGráfica",
 			"ZonaPlacaBase",
 			"ZonaCPU",
-			"ZonaRAM"
+			"ZonaRAM",
+			"TextoExplicación",
+			"TextoAciertos",
+			"FondoAciertos",
+			"FondoFin",
+			"TextoFin",
+			"BotónRepetir",
+			"BotónVolver"
 		],
 		"subfolders": []
 	},

@@ -1,5 +1,3 @@
-# [GDV][IB] García_Blázquez_Daniel - Entrega 4 (Videojuego: "Monta-un-PC")
-
 # Monta un PC – Videojuego Educativo
 ## Descripción
 Este proyecto es un videojuego educativo creado en **Construct 3** para la asignatura de

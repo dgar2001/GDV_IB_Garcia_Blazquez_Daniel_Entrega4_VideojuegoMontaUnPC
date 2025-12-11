@@ -410,6 +410,22 @@
 					"parameters": {
 						"visibility": "visible"
 					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "BotónRepetir",
+					"sid": 540551483844525,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "BotónVolver",
+					"sid": 141435471248610,
+					"parameters": {
+						"visibility": "visible"
+					}
 				}
 			],
 			"sid": 574852208632911

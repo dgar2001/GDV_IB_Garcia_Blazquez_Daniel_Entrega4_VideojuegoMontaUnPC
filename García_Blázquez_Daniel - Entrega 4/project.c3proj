@@ -79,7 +79,10 @@
 			"FondoFin",
 			"TextoFin",
 			"BotónRepetir",
-			"BotónVolver"
+			"BotónVolver",
+			"Texto",
+			"Botón",
+			"Botón2"
 		],
 		"subfolders": []
 	},
@@ -92,7 +95,8 @@
 	},
 	"layouts": {
 		"items": [
-			"Escena 1"
+			"Juego",
+			"Inicio"
 		],
 		"subfolders": []
 	},

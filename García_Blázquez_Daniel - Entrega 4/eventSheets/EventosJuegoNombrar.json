@@ -1,5 +1,438 @@
 {
 	"name": "EventosJuegoNombrar",
-	"events": [],
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "aciertos2",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 151405743668202
+		},
+		{
+			"eventType": "variable",
+			"name": "partidaAcabada2",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 765703850288846
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 103377390045073
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 731707470158478,
+					"parameters": {
+						"variable": "aciertos2",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 697874025132456,
+					"parameters": {
+						"variable": "partidaAcabada2",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "FondoFin",
+					"sid": 369405683333541,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TextoFin",
+					"sid": 413617845879493,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "BotónRepetir",
+					"sid": 533625901436620,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "BotónVolver",
+					"sid": 427217279026020,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "EntradaCaja",
+					"sid": 110635137620364,
+					"parameters": {
+						"property-name": "\"font-size\"",
+						"value": "\"36px\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "EntradaCPU",
+					"sid": 203957523145677,
+					"parameters": {
+						"property-name": "\"font-size\"",
+						"value": "\"36px\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "EntradaFuenteAlimentación",
+					"sid": 362342784155210,
+					"parameters": {
+						"property-name": "\"font-size\"",
+						"value": "\"36px\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "EntradaGráfica",
+					"sid": 797946203171056,
+					"parameters": {
+						"property-name": "\"font-size\"",
+						"value": "\"36px\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "EntradaPlacaBase",
+					"sid": 456944095672942,
+					"parameters": {
+						"property-name": "\"font-size\"",
+						"value": "\"36px\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "EntradaRAM",
+					"sid": 362761253449849,
+					"parameters": {
+						"property-name": "\"font-size\"",
+						"value": "\"36px\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "EntradaVentilador",
+					"sid": 769244841058714,
+					"parameters": {
+						"property-name": "\"font-size\"",
+						"value": "\"36px\""
+					}
+				}
+			],
+			"sid": 458123684746879
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "EntradaCaja",
+					"sid": 120959706455335,
+					"parameters": {
+						"text": "\"Caja\"",
+						"case": "case-insensitive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 656810682144253,
+					"parameters": {
+						"variable": "aciertos2",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 676052610687925
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "EntradaCPU",
+					"sid": 657501960065495,
+					"parameters": {
+						"text": "\"CPU\"",
+						"case": "case-insensitive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 520573291198033,
+					"parameters": {
+						"variable": "aciertos2",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 250404563758278
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "EntradaFuenteAlimentación",
+					"sid": 900450362217848,
+					"parameters": {
+						"text": "\"Fuente de alimentación\"",
+						"case": "case-insensitive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 709900898441061,
+					"parameters": {
+						"variable": "aciertos2",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 263673090958142
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "EntradaGráfica",
+					"sid": 929798719852147,
+					"parameters": {
+						"text": "\"Gráfica\"",
+						"case": "case-insensitive"
+					}
+				},
+				{
+					"id": "compare-text",
+					"objectClass": "EntradaGráfica",
+					"sid": 532609542257578,
+					"parameters": {
+						"text": "\"Grafica\"",
+						"case": "case-insensitive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 490315365404772,
+					"parameters": {
+						"variable": "aciertos2",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 707456227528969
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "EntradaPlacaBase",
+					"sid": 671472328363652,
+					"parameters": {
+						"text": "\"Placa base\"",
+						"case": "case-insensitive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 261522503208727,
+					"parameters": {
+						"variable": "aciertos2",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 251345332870012
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "EntradaRAM",
+					"sid": 968994518847261,
+					"parameters": {
+						"text": "\"RAM\"",
+						"case": "case-insensitive"
+					}
+				},
+				{
+					"id": "compare-text",
+					"objectClass": "EntradaRAM",
+					"sid": 608210561566921,
+					"parameters": {
+						"text": "\"Memoria RAM\"",
+						"case": "case-insensitive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 683473725743930,
+					"parameters": {
+						"variable": "aciertos2",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 943869092031195
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "EntradaVentilador",
+					"sid": 642719638618181,
+					"parameters": {
+						"text": "\"Ventilador\"",
+						"case": "case-insensitive"
+					}
+				},
+				{
+					"id": "compare-text",
+					"objectClass": "EntradaVentilador",
+					"sid": 497498732030663,
+					"parameters": {
+						"text": "\"Disipador\"",
+						"case": "case-insensitive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 315992603997583,
+					"parameters": {
+						"variable": "aciertos2",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 997535795489708
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 573360791660266,
+					"parameters": {
+						"variable": "aciertos",
+						"comparison": 0,
+						"value": "7"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 527927678137767,
+					"parameters": {
+						"variable": "partidaAcabada2",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "FondoFin",
+					"sid": 249458368257556,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TextoFin",
+					"sid": 670834153806075,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "BotónRepetir",
+					"sid": 106853423771940,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "BotónVolver",
+					"sid": 669707900719112,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "BotónRepetir",
+					"sid": 317161234935921,
+					"parameters": {
+						"property-name": "\"font-size\"",
+						"value": "\"24px\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "BotónVolver",
+					"sid": 428402040668788,
+					"parameters": {
+						"property-name": "\"font-size\"",
+						"value": "\"24px\""
+					}
+				}
+			],
+			"sid": 104885943163869
+		}
+	],
 	"sid": 967071457920587
 }

@@ -276,7 +276,7 @@
 					}
 				},
 				{
-					"type": "TextoExplicación",
+					"type": "TextoExplicaciónColocar",
 					"properties": {
 						"text": "Coloca los componentes en el lugar correspondiente:",
 						"enable-bbcode": true,
@@ -315,96 +315,6 @@
 						"x": 160,
 						"y": 20,
 						"width": 1600,
-						"height": 100,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "FondoAciertos",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 18,
-					"sid": 670095532916432,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 670095532916432,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 1650,
-						"y": 190,
-						"width": 300,
-						"height": 100,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "TextoAciertos",
-					"properties": {
-						"text": "Aciertos: 0/6",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 36,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							0,
-							0,
-							0,
-							1
-						],
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
-						"wrapping": "word",
-						"text-direction": "ltr",
-						"icon-set": -1,
-						"initially-visible": true,
-						"origin": "top-left",
-						"read-aloud": false
-					},
-					"uid": 15,
-					"sid": 844106293101013,
-					"tags": "",
-					"instanceVariables": {},
-					"behaviors": {},
-					"instanceFolderItem": {
-						"sid": 844106293101013,
-						"expanded": true
-					},
-					"showing": true,
-					"locked": false,
-					"world": {
-						"x": 1500,
-						"y": 140,
-						"width": 300,
 						"height": 100,
 						"originX": 0,
 						"originY": 0,
@@ -535,8 +445,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1677,
-						"y": 650,
+						"x": 1697,
+						"y": 557,
 						"width": 357.26674670599664,
 						"height": 99.00725529630235,
 						"originX": 0.503921568627451,
@@ -682,8 +592,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1673,
-						"y": 417,
+						"x": 1665,
+						"y": 300,
 						"width": 276.5443657117182,
 						"height": 40.0188952377237,
 						"originX": 0.49600798403193613,
@@ -731,8 +641,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1615,
-						"y": 891,
+						"x": 1658,
+						"y": 811,
 						"width": 219.22894361919757,
 						"height": 236.02470946099098,
 						"originX": 0.5060483870967742,
@@ -841,7 +751,7 @@
 					"type": "BotónRepetir",
 					"properties": {
 						"type": "button",
-						"text": "REPETIR",
+						"text": "Repetir",
 						"tooltip": "",
 						"initially-visible": false,
 						"enabled": true,
@@ -880,7 +790,7 @@
 					"type": "BotónVolver",
 					"properties": {
 						"type": "button",
-						"text": "VOLVER A INICIO",
+						"text": "Volver a inicio",
 						"tooltip": "",
 						"initially-visible": false,
 						"enabled": true,

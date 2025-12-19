@@ -139,14 +139,6 @@
 						"variable": "aciertos",
 						"value": "1"
 					}
-				},
-				{
-					"id": "set-text",
-					"objectClass": "TextoAciertos",
-					"sid": 722051850603849,
-					"parameters": {
-						"text": "\"Aciertos: \" & aciertos & \"/6\""
-					}
 				}
 			],
 			"sid": 621966133839600
@@ -205,14 +197,6 @@
 						"variable": "aciertos",
 						"value": "1"
 					}
-				},
-				{
-					"id": "set-text",
-					"objectClass": "TextoAciertos",
-					"sid": 700410112789793,
-					"parameters": {
-						"text": "\"Aciertos: \" & aciertos & \"/6\""
-					}
 				}
 			],
 			"sid": 923717564940083
@@ -270,14 +254,6 @@
 						"variable": "aciertos",
 						"value": "1"
 					}
-				},
-				{
-					"id": "set-text",
-					"objectClass": "TextoAciertos",
-					"sid": 927788215083116,
-					"parameters": {
-						"text": "\"Aciertos: \" & aciertos & \"/6\""
-					}
 				}
 			],
 			"sid": 814338668929190
@@ -326,14 +302,6 @@
 					"parameters": {
 						"variable": "aciertos",
 						"value": "1"
-					}
-				},
-				{
-					"id": "set-text",
-					"objectClass": "TextoAciertos",
-					"sid": 953460262690707,
-					"parameters": {
-						"text": "\"Aciertos: \" & aciertos & \"/6\""
 					}
 				}
 			],
@@ -384,14 +352,6 @@
 						"variable": "aciertos",
 						"value": "1"
 					}
-				},
-				{
-					"id": "set-text",
-					"objectClass": "TextoAciertos",
-					"sid": 552290874372170,
-					"parameters": {
-						"text": "\"Aciertos: \" & aciertos & \"/6\""
-					}
 				}
 			],
 			"sid": 843265479379265
@@ -440,14 +400,6 @@
 					"parameters": {
 						"variable": "aciertos",
 						"value": "1"
-					}
-				},
-				{
-					"id": "set-text",
-					"objectClass": "TextoAciertos",
-					"sid": 689292362433479,
-					"parameters": {
-						"text": "\"Aciertos: \" & aciertos & \"/6\""
 					}
 				}
 			],
@@ -507,6 +459,24 @@
 					"sid": 864432330350344,
 					"parameters": {
 						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "BotónRepetir",
+					"sid": 374706711472615,
+					"parameters": {
+						"property-name": "\"font-size\"",
+						"value": "\"24px\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "BotónVolver",
+					"sid": 102383195725064,
+					"parameters": {
+						"property-name": "\"font-size\"",
+						"value": "\"24px\""
 					}
 				}
 			],

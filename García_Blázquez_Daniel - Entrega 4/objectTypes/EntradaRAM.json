@@ -1,0 +1,9 @@
+{
+	"name": "EntradaRAM",
+	"plugin-id": "TextBox",
+	"sid": 735724813962648,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": []
+}

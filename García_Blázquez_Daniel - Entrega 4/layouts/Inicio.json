@@ -7,7 +7,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "Texto",
+					"type": "TextoInicio1",
 					"properties": {
 						"text": "VIDEOJUEGO",
 						"enable-bbcode": true,
@@ -60,7 +60,7 @@
 					}
 				},
 				{
-					"type": "Texto2",
+					"type": "TextoInicio2",
 					"properties": {
 						"text": "MONTA UN PC",
 						"enable-bbcode": true,
@@ -116,7 +116,7 @@
 					"type": "BotónColocar",
 					"properties": {
 						"type": "button",
-						"text": "COLOCAR COMPONENTES",
+						"text": "Colocar componentes",
 						"tooltip": "",
 						"initially-visible": true,
 						"enabled": true,
@@ -155,7 +155,7 @@
 					"type": "BotónNombrar",
 					"properties": {
 						"type": "button",
-						"text": "NOMBRAR COMPONENTES",
+						"text": "Nombrar componentes",
 						"tooltip": "",
 						"initially-visible": true,
 						"enabled": true,
@@ -191,7 +191,7 @@
 					}
 				},
 				{
-					"type": "Texto3",
+					"type": "TextoInicio3",
 					"properties": {
 						"text": "Escoge un modo de juego:",
 						"enable-bbcode": true,
@@ -287,5 +287,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": "EventosMain"
+	"eventSheet": "EventosInicio"
 }

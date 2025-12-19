@@ -1,0 +1,160 @@
+{
+	"name": "EventosInicio",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 819539026710104
+				}
+			],
+			"actions": [
+				{
+					"id": "set-css-style",
+					"objectClass": "BotónNombrar",
+					"sid": 506813258758765,
+					"parameters": {
+						"property-name": "\"font-size\"",
+						"value": "\"24px\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "BotónColocar",
+					"sid": 278449383180928,
+					"parameters": {
+						"property-name": "\"font-size\"",
+						"value": "\"24px\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "BotónRepetir",
+					"sid": 290364699678246,
+					"parameters": {
+						"property-name": "\"font-size\"",
+						"value": "\"50px\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "BotónVolver",
+					"sid": 733082217848550,
+					"parameters": {
+						"property-name": "\"font-size\"",
+						"value": "\"50px\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "EntradaCaja",
+					"sid": 651203262109757,
+					"parameters": {
+						"property-name": "\"font-size\"",
+						"value": "\"50px\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "EntradaCPU",
+					"sid": 216995024264440,
+					"parameters": {
+						"property-name": "\"font-size\"",
+						"value": "\"50px\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "EntradaFuenteAlimentación",
+					"sid": 422157441322366,
+					"parameters": {
+						"property-name": "\"font-size\"",
+						"value": "\"50px\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "EntradaGráfica",
+					"sid": 861516741977687,
+					"parameters": {
+						"property-name": "\"font-size\"",
+						"value": "\"50px\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "EntradaPlacaBase",
+					"sid": 121880071314536,
+					"parameters": {
+						"property-name": "\"font-size\"",
+						"value": "\"50px\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "EntradaRAM",
+					"sid": 494901335795695,
+					"parameters": {
+						"property-name": "\"font-size\"",
+						"value": "\"50px\""
+					}
+				},
+				{
+					"id": "set-css-style",
+					"objectClass": "EntradaVentilador",
+					"sid": 949774886644406,
+					"parameters": {
+						"property-name": "\"font-size\"",
+						"value": "\"50px\""
+					}
+				}
+			],
+			"sid": 810876497447111
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "BotónNombrar",
+					"sid": 621855006371011
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 971539356531672,
+					"parameters": {
+						"layout": "JuegoNombrar"
+					}
+				}
+			],
+			"sid": 430941481229724
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "BotónColocar",
+					"sid": 135447069530961
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 181833355456131,
+					"parameters": {
+						"layout": "JuegoColocar"
+					}
+				}
+			],
+			"sid": 905071518461097
+		}
+	],
+	"sid": 540731165142209
+}

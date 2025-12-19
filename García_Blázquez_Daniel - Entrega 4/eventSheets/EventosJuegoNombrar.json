@@ -3,23 +3,73 @@
 	"events": [
 		{
 			"eventType": "variable",
-			"name": "aciertos2",
-			"type": "number",
-			"initialValue": "0",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 151405743668202
-		},
-		{
-			"eventType": "variable",
-			"name": "partidaAcabada2",
+			"name": "checkCaja",
 			"type": "boolean",
 			"initialValue": "false",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
-			"sid": 765703850288846
+			"sid": 994995603452498
+		},
+		{
+			"eventType": "variable",
+			"name": "checkCPU",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 536505405059843
+		},
+		{
+			"eventType": "variable",
+			"name": "checkFuenteAlimentación",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 876789021537133
+		},
+		{
+			"eventType": "variable",
+			"name": "checkGráfica",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 234544720355123
+		},
+		{
+			"eventType": "variable",
+			"name": "checkPlacaBase",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 399072347337759
+		},
+		{
+			"eventType": "variable",
+			"name": "checkRAM",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 547346217121683
+		},
+		{
+			"eventType": "variable",
+			"name": "checkVentilador",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 886082394310717
 		},
 		{
 			"eventType": "block",
@@ -32,20 +82,65 @@
 			],
 			"actions": [
 				{
-					"id": "set-eventvar-value",
+					"id": "set-boolean-eventvar",
 					"objectClass": "System",
-					"sid": 731707470158478,
+					"sid": 702965115561503,
 					"parameters": {
-						"variable": "aciertos2",
-						"value": "0"
+						"variable": "checkCaja",
+						"value": "false"
 					}
 				},
 				{
 					"id": "set-boolean-eventvar",
 					"objectClass": "System",
-					"sid": 697874025132456,
+					"sid": 744177876352775,
 					"parameters": {
-						"variable": "partidaAcabada2",
+						"variable": "checkCPU",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 117626012149292,
+					"parameters": {
+						"variable": "checkFuenteAlimentación",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 595402086044879,
+					"parameters": {
+						"variable": "checkGráfica",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 671406624978948,
+					"parameters": {
+						"variable": "checkPlacaBase",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 905604363528628,
+					"parameters": {
+						"variable": "checkRAM",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 732990633547382,
+					"parameters": {
+						"variable": "checkVentilador",
 						"value": "false"
 					}
 				},
@@ -162,12 +257,20 @@
 			],
 			"actions": [
 				{
-					"id": "add-to-eventvar",
+					"id": "set-boolean-eventvar",
 					"objectClass": "System",
-					"sid": 656810682144253,
+					"sid": 515131304199258,
 					"parameters": {
-						"variable": "aciertos2",
-						"value": "1"
+						"variable": "checkCaja",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-read-only",
+					"objectClass": "EntradaCaja",
+					"sid": 827371064215243,
+					"parameters": {
+						"mode": "read-only"
 					}
 				}
 			],
@@ -188,12 +291,20 @@
 			],
 			"actions": [
 				{
-					"id": "add-to-eventvar",
+					"id": "set-boolean-eventvar",
 					"objectClass": "System",
-					"sid": 520573291198033,
+					"sid": 505186751169463,
 					"parameters": {
-						"variable": "aciertos2",
-						"value": "1"
+						"variable": "checkCPU",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-read-only",
+					"objectClass": "EntradaCPU",
+					"sid": 439946904179531,
+					"parameters": {
+						"mode": "read-only"
 					}
 				}
 			],
@@ -210,20 +321,56 @@
 						"text": "\"Fuente de alimentación\"",
 						"case": "case-insensitive"
 					}
+				},
+				{
+					"id": "compare-text",
+					"objectClass": "EntradaFuenteAlimentación",
+					"sid": 913251789671756,
+					"parameters": {
+						"text": "\"Fuente de alimentacion\"",
+						"case": "case-insensitive"
+					}
+				},
+				{
+					"id": "compare-text",
+					"objectClass": "EntradaFuenteAlimentación",
+					"sid": 165837735551945,
+					"parameters": {
+						"text": "\"Fuente\"",
+						"case": "case-insensitive"
+					}
+				},
+				{
+					"id": "compare-text",
+					"objectClass": "EntradaFuenteAlimentación",
+					"sid": 260619336817005,
+					"parameters": {
+						"text": "\"PSU\"",
+						"case": "case-insensitive"
+					}
 				}
 			],
 			"actions": [
 				{
-					"id": "add-to-eventvar",
+					"id": "set-boolean-eventvar",
 					"objectClass": "System",
-					"sid": 709900898441061,
+					"sid": 822769659024467,
 					"parameters": {
-						"variable": "aciertos2",
-						"value": "1"
+						"variable": "checkFuenteAlimentación",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-read-only",
+					"objectClass": "EntradaFuenteAlimentación",
+					"sid": 550056695058487,
+					"parameters": {
+						"mode": "read-only"
 					}
 				}
 			],
-			"sid": 263673090958142
+			"sid": 263673090958142,
+			"isOrBlock": true
 		},
 		{
 			"eventType": "block",
@@ -245,20 +392,47 @@
 						"text": "\"Grafica\"",
 						"case": "case-insensitive"
 					}
+				},
+				{
+					"id": "compare-text",
+					"objectClass": "EntradaGráfica",
+					"sid": 500330680244930,
+					"parameters": {
+						"text": "\"Tarjeta gráfica\"",
+						"case": "case-insensitive"
+					}
+				},
+				{
+					"id": "compare-text",
+					"objectClass": "EntradaGráfica",
+					"sid": 940748828983918,
+					"parameters": {
+						"text": "\"Tarjeta grafica\"",
+						"case": "case-insensitive"
+					}
 				}
 			],
 			"actions": [
 				{
-					"id": "add-to-eventvar",
+					"id": "set-boolean-eventvar",
 					"objectClass": "System",
-					"sid": 490315365404772,
+					"sid": 368721713775271,
 					"parameters": {
-						"variable": "aciertos2",
-						"value": "1"
+						"variable": "checkGráfica",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-read-only",
+					"objectClass": "EntradaGráfica",
+					"sid": 736545799057958,
+					"parameters": {
+						"mode": "read-only"
 					}
 				}
 			],
-			"sid": 707456227528969
+			"sid": 707456227528969,
+			"isOrBlock": true
 		},
 		{
 			"eventType": "block",
@@ -271,20 +445,38 @@
 						"text": "\"Placa base\"",
 						"case": "case-insensitive"
 					}
+				},
+				{
+					"id": "compare-text",
+					"objectClass": "EntradaPlacaBase",
+					"sid": 801939463342728,
+					"parameters": {
+						"text": "\"Placa\"",
+						"case": "case-insensitive"
+					}
 				}
 			],
 			"actions": [
 				{
-					"id": "add-to-eventvar",
+					"id": "set-boolean-eventvar",
 					"objectClass": "System",
-					"sid": 261522503208727,
+					"sid": 895925555517219,
 					"parameters": {
-						"variable": "aciertos2",
-						"value": "1"
+						"variable": "checkPlacaBase",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-read-only",
+					"objectClass": "EntradaPlacaBase",
+					"sid": 761368436565465,
+					"parameters": {
+						"mode": "read-only"
 					}
 				}
 			],
-			"sid": 251345332870012
+			"sid": 251345332870012,
+			"isOrBlock": true
 		},
 		{
 			"eventType": "block",
@@ -301,7 +493,7 @@
 				{
 					"id": "compare-text",
 					"objectClass": "EntradaRAM",
-					"sid": 608210561566921,
+					"sid": 969185922917156,
 					"parameters": {
 						"text": "\"Memoria RAM\"",
 						"case": "case-insensitive"
@@ -310,16 +502,25 @@
 			],
 			"actions": [
 				{
-					"id": "add-to-eventvar",
+					"id": "set-boolean-eventvar",
 					"objectClass": "System",
-					"sid": 683473725743930,
+					"sid": 947806468139079,
 					"parameters": {
-						"variable": "aciertos2",
-						"value": "1"
+						"variable": "checkRAM",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-read-only",
+					"objectClass": "EntradaRAM",
+					"sid": 520365433093220,
+					"parameters": {
+						"mode": "read-only"
 					}
 				}
 			],
-			"sid": 943869092031195
+			"sid": 943869092031195,
+			"isOrBlock": true
 		},
 		{
 			"eventType": "block",
@@ -345,41 +546,87 @@
 			],
 			"actions": [
 				{
-					"id": "add-to-eventvar",
+					"id": "set-boolean-eventvar",
 					"objectClass": "System",
-					"sid": 315992603997583,
+					"sid": 111729128581816,
 					"parameters": {
-						"variable": "aciertos2",
-						"value": "1"
+						"variable": "checkVentilador",
+						"value": "true"
+					}
+				},
+				{
+					"id": "set-read-only",
+					"objectClass": "EntradaVentilador",
+					"sid": 958394440541899,
+					"parameters": {
+						"mode": "read-only"
 					}
 				}
 			],
-			"sid": 997535795489708
+			"sid": 997535795489708,
+			"isOrBlock": true
 		},
 		{
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "compare-eventvar",
+					"id": "compare-boolean-eventvar",
 					"objectClass": "System",
-					"sid": 573360791660266,
+					"sid": 846967666319666,
 					"parameters": {
-						"variable": "aciertos",
-						"comparison": 0,
-						"value": "7"
+						"variable": "checkCaja"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 805176734693679,
+					"parameters": {
+						"variable": "checkCPU"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 293809904020340,
+					"parameters": {
+						"variable": "checkFuenteAlimentación"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 176717690082430,
+					"parameters": {
+						"variable": "checkGráfica"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 853845740189615,
+					"parameters": {
+						"variable": "checkPlacaBase"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 250242342595319,
+					"parameters": {
+						"variable": "checkRAM"
+					}
+				},
+				{
+					"id": "compare-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 498064052921861,
+					"parameters": {
+						"variable": "checkVentilador"
 					}
 				}
 			],
 			"actions": [
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 527927678137767,
-					"parameters": {
-						"variable": "partidaAcabada2",
-						"value": "true"
-					}
-				},
 				{
 					"id": "set-visible",
 					"objectClass": "FondoFin",
@@ -432,6 +679,45 @@
 				}
 			],
 			"sid": 104885943163869
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "BotónRepetir",
+					"sid": 978502758319125
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 750343566277001
+				}
+			],
+			"sid": 547732401549767
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "BotónVolver",
+					"sid": 199139245101702
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 612280701036232,
+					"parameters": {
+						"layout": "Inicio"
+					}
+				}
+			],
+			"sid": 340792149647579
 		}
 	],
 	"sid": 967071457920587

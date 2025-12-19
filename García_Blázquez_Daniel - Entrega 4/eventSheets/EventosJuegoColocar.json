@@ -3,7 +3,7 @@
 	"events": [
 		{
 			"eventType": "variable",
-			"name": "aciertos",
+			"name": "aciertosColocar",
 			"type": "number",
 			"initialValue": "0",
 			"comment": "",
@@ -22,16 +22,6 @@
 			"sid": 739951026416591
 		},
 		{
-			"eventType": "variable",
-			"name": "partidaAcabada",
-			"type": "boolean",
-			"initialValue": "false",
-			"comment": "",
-			"isStatic": false,
-			"isConstant": false,
-			"sid": 570936332686006
-		},
-		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -46,17 +36,8 @@
 					"objectClass": "System",
 					"sid": 143217181446345,
 					"parameters": {
-						"variable": "aciertos",
+						"variable": "aciertosColocar",
 						"value": "0"
-					}
-				},
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 332789537804904,
-					"parameters": {
-						"variable": "partidaAcabada",
-						"value": "false"
 					}
 				},
 				{
@@ -136,7 +117,7 @@
 					"objectClass": "System",
 					"sid": 714866827707828,
 					"parameters": {
-						"variable": "aciertos",
+						"variable": "aciertosColocar",
 						"value": "1"
 					}
 				}
@@ -194,7 +175,7 @@
 					"objectClass": "System",
 					"sid": 182906870992108,
 					"parameters": {
-						"variable": "aciertos",
+						"variable": "aciertosColocar",
 						"value": "1"
 					}
 				}
@@ -251,7 +232,7 @@
 					"objectClass": "System",
 					"sid": 642676164455332,
 					"parameters": {
-						"variable": "aciertos",
+						"variable": "aciertosColocar",
 						"value": "1"
 					}
 				}
@@ -300,7 +281,7 @@
 					"objectClass": "System",
 					"sid": 540275670625027,
 					"parameters": {
-						"variable": "aciertos",
+						"variable": "aciertosColocar",
 						"value": "1"
 					}
 				}
@@ -349,7 +330,7 @@
 					"objectClass": "System",
 					"sid": 560919678813789,
 					"parameters": {
-						"variable": "aciertos",
+						"variable": "aciertosColocar",
 						"value": "1"
 					}
 				}
@@ -398,7 +379,7 @@
 					"objectClass": "System",
 					"sid": 500023361284103,
 					"parameters": {
-						"variable": "aciertos",
+						"variable": "aciertosColocar",
 						"value": "1"
 					}
 				}
@@ -413,22 +394,13 @@
 					"objectClass": "System",
 					"sid": 899283061776561,
 					"parameters": {
-						"variable": "aciertos",
+						"variable": "aciertosColocar",
 						"comparison": 0,
 						"value": "6"
 					}
 				}
 			],
 			"actions": [
-				{
-					"id": "set-boolean-eventvar",
-					"objectClass": "System",
-					"sid": 771435905601865,
-					"parameters": {
-						"variable": "partidaAcabada",
-						"value": "true"
-					}
-				},
 				{
 					"id": "set-visible",
 					"objectClass": "FondoFin",

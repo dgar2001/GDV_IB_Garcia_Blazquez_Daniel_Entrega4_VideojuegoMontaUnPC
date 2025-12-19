@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 45802,
+	"savedWithRelease": 46600,
 	"name": "Game1_García_Blázquez_Daniel",
 	"runtime": "c3",
 	"useWorker": "auto",
@@ -92,13 +92,17 @@
 	},
 	"layouts": {
 		"items": [
-			"Escena 1"
+			"Inicio",
+			"JuegoColocar",
+			"JuegoNombrar"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"Hoja de eventos 1"
+			"EventosJuegoColocar",
+			"EventosJuegoNombrar",
+			"EventosMain"
 		],
 		"subfolders": []
 	},

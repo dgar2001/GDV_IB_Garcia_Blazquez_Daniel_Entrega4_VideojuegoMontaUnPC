@@ -1,5 +1,5 @@
 {
-	"name": "Hoja de eventos 1",
+	"name": "EventosJuegoColocar",
 	"events": [
 		{
 			"eventType": "variable",
@@ -20,6 +20,79 @@
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 739951026416591
+		},
+		{
+			"eventType": "variable",
+			"name": "partidaAcabada",
+			"type": "boolean",
+			"initialValue": "false",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 570936332686006
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 957502772107459
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 143217181446345,
+					"parameters": {
+						"variable": "aciertos",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 332789537804904,
+					"parameters": {
+						"variable": "partidaAcabada",
+						"value": "false"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "FondoFin",
+					"sid": 744547957707056,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TextoFin",
+					"sid": 266983568873202,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "BotónRepetir",
+					"sid": 297082622505376,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "BotónVolver",
+					"sid": 274230497931875,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 123958004155928
 		},
 		{
 			"eventType": "block",
@@ -396,6 +469,15 @@
 			],
 			"actions": [
 				{
+					"id": "set-boolean-eventvar",
+					"objectClass": "System",
+					"sid": 771435905601865,
+					"parameters": {
+						"variable": "partidaAcabada",
+						"value": "true"
+					}
+				},
+				{
 					"id": "set-visible",
 					"objectClass": "FondoFin",
 					"sid": 725198858097254,
@@ -410,9 +492,64 @@
 					"parameters": {
 						"visibility": "visible"
 					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "BotónRepetir",
+					"sid": 952467428931101,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "BotónVolver",
+					"sid": 864432330350344,
+					"parameters": {
+						"visibility": "visible"
+					}
 				}
 			],
 			"sid": 574852208632911
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "BotónRepetir",
+					"sid": 122988550061739
+				}
+			],
+			"actions": [
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 197918765327658
+				}
+			],
+			"sid": 370141012819321
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "BotónVolver",
+					"sid": 298061341631703
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 257805365415598,
+					"parameters": {
+						"layout": "Inicio"
+					}
+				}
+			],
+			"sid": 153919974511425
 		}
 	],
 	"sid": 139087313936096

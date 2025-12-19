@@ -1,0 +1,9 @@
+{
+	"name": "BotónColocar",
+	"plugin-id": "Button",
+	"sid": 468908281146435,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": []
+}

@@ -1,0 +1,9 @@
+{
+	"name": "BotónNombrar",
+	"plugin-id": "Button",
+	"sid": 908960817139047,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": []
+}

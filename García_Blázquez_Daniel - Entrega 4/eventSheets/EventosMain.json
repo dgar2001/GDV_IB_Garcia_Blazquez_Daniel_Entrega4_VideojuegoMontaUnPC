@@ -1,5 +1,48 @@
 {
 	"name": "EventosMain",
-	"events": [],
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "BotónNombrar",
+					"sid": 621855006371011
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 971539356531672,
+					"parameters": {
+						"layout": "JuegoNombrar"
+					}
+				}
+			],
+			"sid": 430941481229724
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "BotónColocar",
+					"sid": 135447069530961
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 181833355456131,
+					"parameters": {
+						"layout": "JuegoColocar"
+					}
+				}
+			],
+			"sid": 905071518461097
+		}
+	],
 	"sid": 540731165142209
 }

@@ -79,7 +79,12 @@
 			"FondoFin",
 			"TextoFin",
 			"BotónRepetir",
-			"BotónVolver"
+			"BotónVolver",
+			"Texto",
+			"Texto2",
+			"BotónColocar",
+			"BotónNombrar",
+			"Texto3"
 		],
 		"subfolders": []
 	},

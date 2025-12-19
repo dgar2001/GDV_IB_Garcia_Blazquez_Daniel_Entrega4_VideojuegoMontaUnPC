@@ -278,7 +278,7 @@
 				{
 					"type": "TextoExplicaciónColocar",
 					"properties": {
-						"text": "Coloca los componentes en el lugar correspondiente:",
+						"text": "Coloca los componentes en el lugar correspondiente",
 						"enable-bbcode": true,
 						"font": "Arial",
 						"size": 48,
